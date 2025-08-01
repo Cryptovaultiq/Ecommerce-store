@@ -1,7 +1,7 @@
 {
   "routes": [
-    { "src": "/", "dest": "/customer.html" },        // Root URL serves the customer page
-    { "src": "/admin", "dest": "/index.html" },      // Admin page at /admin
-    { "src": "/(.*)", "dest": "/customer.html" }     // Catch-all for other paths
+    { "src": "/admin", "dest": "/admin.html" },
+    { "src": "/", "dest": "/customer.html" },
+    { "src": "/(.*)", "dest": "/customer.html" }
   ]
 }
