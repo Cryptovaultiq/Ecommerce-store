@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HollyHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" id="siteTitle">Hollywilly</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#content">Content</a></li>
+            </ul>
+        </nav>
+        <div class="cart" id="cartIcon">Cart (<span id="cartCount">0</span>)</div>
+    </header>
+    <section class="hero" id="home">
+        <h1>Welcome to HollyHub, Cart your desires, We are here for You</h1>
+        <p id="heroContent">Discover unbeatable prices on luxury Items.</p>
+        <button class="hero-button" id="openPopup">Subscribe</button>
+    </section>
+    <section class="products" id="shop">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="customerProductList"></div>
+    </section>
+    <section class="content" id="content">
+        <h2>Latest Updates</h2>
+        <div id="customerContentList"></div>
+    </section>
+    <div class="cart-popup" id="cartPopup" style="display: none;">
+        <div class="cart-content">
+            <span class="close-cart" id="closeCart">&times;</span>
+            <h2>Cart</h2>
+            <div id="cartItems"></div>
+            <form id="paymentForm">
+                <input type="text" id="cardNumber" placeholder="Card Number" required>
+                <input type="text" id="expiry" placeholder="MM/YY" required>
+                <input type="text" id="cvv" placeholder="CVV" required>
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-popup" id="closePopup">&times;</span>
+            <h2>Subscribe</h2>
+            <form id="popupForm">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 HollyHub</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
