@@ -1,6 +1,7 @@
 {
   "routes": [
-    { "src": "/admin", "dest": "admin.html" },
-    { "src": "/(.*)", "dest": "customer.html" }
+    { "src": "/admin", "dest": "/admin.html" },
+    { "src": "/", "dest": "/customer.html" },
+    { "src": "/(.*)", "dest": "/customer.html" }
   ]
 }
