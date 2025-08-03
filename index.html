@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container" id="login">
+        <form id="loginForm">
+            <h2>Admin Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div class="dashboard-container" id="dashboard" style="display: none;">
+        <aside class="sidebar">
+            <h3>Admin Panel</h3>
+            <ul>
+                <li><a href="#site-settings">Site Settings</a></li>
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#themes-installation">Themes Installation</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#discount">Discount</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#customers">Customers</a></li>
+                <li><a href="#integrations">Integrations</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <section id="site-settings">
+                <h2>Site Settings</h2>
+                <form id="siteSettingsForm">
+                    <input type="text" id="siteTitle" placeholder="Site Title" value="HollyHub">
+                    <button type="submit">Save</button>
+                </form>
+            </section>
+            <section id="apps" style="display: none;">
+                <h2>Apps</h2>
+                <form id="appForm">
+                    <input type="text" id="appUrl" placeholder="App URL (e.g., https://example.com/app.js)" required>
+                    <button type="submit">Install App</button>
+                </form>
+                <div id="installedApps"></div>
+            </section>
+            <section id="themes-installation" style="display: none;">
+                <h2>Themes Installation</h2>
+                <form id="themeForm">
+                    <input type="text" id="themeUrl" placeholder="Theme URL (e.g., https://example.com/theme.css)" required>
+                    <button type="submit">Install Theme</button>
+                </form>
+                <div id="installedThemes"></div>
+            </section>
+            <section id="content" style="display: none;">
+                <h2>Content Management</h2>
+                <form id="contentForm">
+                    <textarea id="contentText" placeholder="Add content or blog..." rows="4" required></textarea>
+                    <button type="submit">Add Content</button>
+                </form>
+                <div id="contentList"></div>
+            </section>
+            <section id="discount" style="display: none;">
+                <h2>Discounts</h2>
+                <form id="discountForm">
+                    <input type="text" id="discountCode" placeholder="Discount Code (e.g., SAVE10)" required>
+                    <input type="number" id="discountPercent" placeholder="Percentage (e.g., 10)" min="0" max="100" required>
+                    <button type="submit">Set Discount</button>
+                </form>
+                <div id="discountList"></div>
+            </section>
+            <section id="analytics" style="display: none;">
+                <h2>Analytics</h2>
+                <p>Visits: <span id="visitCount">0</span> | Sales: $<span id="salesTotal">0</span></p>
+            </section>
+            <section id="customers" style="display: none;">
+                <h2>Customers</h2>
+                <p>No customers data yet.</p>
+            </section>
+            <section id="integrations" style="display: none;">
+                <h2>Integrations</h2>
+                <form id="integrationForm">
+                    <input type="text" id="integrationUrl" placeholder="Integration URL (e.g., https://example.com/api)" required>
+                    <button type="submit">Add Integration</button>
+                </form>
+                <div id="installedIntegrations"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
