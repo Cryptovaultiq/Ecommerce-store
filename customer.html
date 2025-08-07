@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-  body { background: #F0E68C; color: #8A2BE2; }
-  h1 { font-size: 2.5rem; }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOLLY HUB - Shop</title>
@@ -17,8 +13,6 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#" id="openPopup">Subscribe</a></li>
-                <li><a href="#" id="cartIcon">Cart (<span id="cartCount">0</span>)</a></li>
             </ul>
         </nav>
     </header>
@@ -38,32 +32,6 @@
     <footer>
         <p>&copy; 2025 HOLLY HUB. All rights reserved.</p>
     </footer>
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span id="closePopup" class="close-popup">&times;</span>
-            <h2>Subscribe</h2>
-            <form id="popupForm">
-                <input type="email" id="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </div>
-    <div id="cartPopup" class="cart-popup">
-        <div class="cart-content">
-            <span id="closeCart" class="close-cart">&times;</span>
-            <h2>Your Cart</h2>
-            <div id="cartItems"></div>
-            <form id="paymentForm">
-                <input type="text" id="cardNumber" placeholder="Card Number" required>
-                <input type="text" id="expiry" placeholder="MM/YY" required>
-                <input type="text" id="cvv" placeholder="CVV" required>
-                <button type="submit">Pay Now</button>
-            </form>
-            <p>Total Sales: $<span id="salesTotal">0</span></p>
-            <p>Visits: <span id="visitCount">0</span></p>
-        </div>
-    </div>
     <script src="script.js"></script>
 </body>
-
 </html>
